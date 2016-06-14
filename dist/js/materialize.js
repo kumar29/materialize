@@ -2930,7 +2930,7 @@ $(document).ready(function(){
           lastID = $select.data('select-id'); // Tear down structure if Select needs to be rebuilt
 
       if (lastID) {
-        $select.parent().find('span.caret').remove();
+        $select.parent().find('span.caret-md').remove();
         $select.parent().find('input').remove();
 
         $select.unwrap();
@@ -3038,7 +3038,7 @@ $(document).ready(function(){
       // Wrap Elements
       $select.wrap(wrapper);
       // Add Select Display Element
-      var dropdownIcon = $('<span class="caret">&#9660;</span>');
+      var dropdownIcon = $('<span class="caret-md">&#9660;</span>');
       if ($select.is(':disabled'))
         dropdownIcon.addClass('disabled');
 

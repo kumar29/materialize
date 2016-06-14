@@ -6445,7 +6445,7 @@ select {
   display: block;
 }
 
-.select-wrapper span.caret {
+.select-wrapper span.caret-md {
   color: initial;
   position: absolute;
   right: 0;
@@ -6453,7 +6453,7 @@ select {
   font-size: 10px;
 }
 
-.select-wrapper span.caret.disabled {
+.select-wrapper span.caret-md.disabled {
   color: rgba(0, 0, 0, 0.26);
 }
 
