@@ -1,6 +1,6 @@
 {
-  "name": "Materialize",
-  "description": "A modern responsive front-end framework based on Material Design",
+  "name": "bootstrap-materialize-haven",
+  "description": "A version of Materialize css with Grid system removed ",
   "keywords": [
     "css",
     "js",
@@ -57,5 +57,6 @@
     "jquery": ">=2.1.1"
   },
   "devDependencies": {
-  }
+  },
+  "homepage": "https://github.com/kumar29/materialize"
 }
