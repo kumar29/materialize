@@ -58,5 +58,9 @@
   },
   "devDependencies": {
   },
-  "homepage": "https://github.com/kumar29/materialize"
+  "homepage": "https://github.com/kumar29/materialize",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kumar29/materialize.git"
+  }
 }
