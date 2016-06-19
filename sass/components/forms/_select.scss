@@ -37,11 +37,11 @@ select {
   }
 
   span.caret-md {
-    color: initial;
+    color: rgba(158, 158, 158, 0.54);
     position: absolute;
     right: 0;
     top: 16px;
-    font-size: 10px;
+    font-size: 12px;
     &.disabled {
       color: $input-disabled-color;
     }

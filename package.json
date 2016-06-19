@@ -1,9 +1,9 @@
 {
   "name": "materialize-css",
   "description": "Builds Materialize distribution packages",
-  "author": "Alvin Wang, Alan Chang",
+  "author": "Alvin Wang, Alan Chang, Kumar K",
   "url": "http://materializecss.com/",
-  "version": "0.97.7",
+  "version": "0.97.8",
   "main": "bin/materialize.js",
   "license": "MIT",
   "repository": {

@@ -3181,11 +3181,11 @@ select {
     padding: 0;
     display: block; }
   .select-wrapper span.caret-md {
-    color: initial;
+    color: rgba(158, 158, 158, 0.54);
     position: absolute;
     right: 0;
     top: 16px;
-    font-size: 10px; }
+    font-size: 12px; }
     .select-wrapper span.caret-md.disabled {
       color: rgba(0, 0, 0, 0.26); }
   .select-wrapper + label {
@@ -3388,4 +3388,4 @@ input[type=range]:focus::-ms-fill-lower {
 input[type=range]:focus::-ms-fill-upper {
   background: #ccc; }
 
-/*# sourceMappingURL=tests.css.map */
+/*# sourceMappingURL=materialize.css.map */

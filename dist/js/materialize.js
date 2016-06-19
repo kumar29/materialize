@@ -3038,8 +3038,8 @@ $(document).ready(function(){
 
       // Wrap Elements
       $select.wrap(wrapper);
-      // Add Select Display Element
-      var dropdownIcon = $('<span class="caret-md">&#9660;</span>');
+      // Add Select Display Element. Use a bootstrap glyph
+      var dropdownIcon = $('<span class="caret-md"><span class="glyphicon glyphicon-menu-down"></span></span>');
       if ($select.is(':disabled'))
         dropdownIcon.addClass('disabled');
 
