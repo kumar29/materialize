@@ -2928,7 +2928,7 @@ $(document).ready(function(){
       }
 
       var multiple = $select.attr('multiple') ? true : false,
-          lastID = $select.data('select-id'); // Tear down structure if Select needs to be rebuilt
+          lastID = $select.attr('select-id'); // Tear down structure if Select needs to be rebuilt
 
       if (lastID) {
         $select.parent().find('span.caret-md').remove();
@@ -2940,12 +2940,12 @@ $(document).ready(function(){
 
       // If destroying the select, remove the selelct-id and reset it to it's uninitialized state.
       if(callback === 'destroy') {
-        $select.data('select-id', null).removeClass('initialized');
+        $select.attr('select-id', null).removeClass('initialized');
         return;
       }
 
       var uniqueID = Materialize.guid();
-      $select.data('select-id', uniqueID);
+      $select.attr('select-id', uniqueID);
       var wrapper = $('<div class="select-wrapper"></div>');
       wrapper.addClass($select.attr('class'));
       var options = $('<ul id="select-options-' + uniqueID +'" class="dropdown-content select-dropdown ' + (multiple ? 'multiple-select-dropdown' : '') + '"></ul>'),
