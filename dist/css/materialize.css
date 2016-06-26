@@ -2735,7 +2735,8 @@ textarea.materialize-textarea {
     transition: .2s ease-out; }
   .input-field label.active {
     font-size: 0.8rem;
-    transform: translateY(-140%); }
+    transform: translateY(-140%);
+    -webkit-transform: translateY(-140%); }
   .input-field .prefix {
     position: absolute;
     width: 3rem;
