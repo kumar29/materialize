@@ -4,6 +4,9 @@ Compile sass with:
 sass --watch sass/materialize.scss:dist/css/materialize.css
 sass --watch sass/materialize.scss:dist/css/materialize.min.css --style compressed --scss
 
+### Current Version : v0.97.11
+Added filled-in class to the input of a select if the select has a non null value.
+
 ### Current Version : v0.97.10
 Added a webkit-transform for input field labels which have an active class
 
