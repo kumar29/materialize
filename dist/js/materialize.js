@@ -3046,6 +3046,7 @@ $(document).ready(function(){
       // escape double quotes
       var sanitizedLabelHtml = label.replace(/"/g, '&quot;');
 
+
       var $newSelect = $('<input type="text" class="select-dropdown" readonly="true" ' + (($select.is(':disabled')) ? 'disabled' : '') + ' data-activates="select-options-' + uniqueID +'" value="'+ sanitizedLabelHtml +'"/>');
       $select.before($newSelect);
       $newSelect.before(dropdownIcon);
@@ -3059,6 +3060,13 @@ $(document).ready(function(){
       // Copy tabindex
       if ($select.attr('tabindex')) {
         $($newSelect[0]).attr('tabindex', $select.attr('tabindex'));
+      }
+
+      // If the underlying select has a non-null value, set the appropriate class. This is
+      // specific for SELECTS and bindster
+      var value = $select.val();
+      if(value && value != 'null') {
+        $newSelect.addClass('filled-in');
       }
 
       $select.addClass('initialized');
