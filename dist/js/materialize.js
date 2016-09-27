@@ -3026,10 +3026,14 @@ $(document).ready(function(){
             }
 
             activateOption(options, $(this));
-            $select.find('option').eq(i).prop('selected', selected);
-            // Trigger onchange() event
-            $select.trigger('change');
-            if (typeof callback !== 'undefined') callback();
+            var selectedOption = $select.find('option').eq(i);
+            if(selectedOption.val() !== 'null'){
+
+              selectedOption.prop('selected', selected);
+              // Trigger onchange() event
+              $select.trigger('change');
+              if(typeof callback !== 'undefined') callback();
+            }
           }
 
           e.stopPropagation();
