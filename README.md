@@ -16,3 +16,6 @@ haven and bindster to have the select-id come back to the DOM after it was remov
 
 ### Version : v0.97.8
 Changed drop down caret so that it doesn't conflict with bootstrap's caret
+
+### Version : v0.97.9
+Treat the string 'null' as a null value and don't propagate events when "null" is being set
